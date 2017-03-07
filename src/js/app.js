@@ -5,7 +5,7 @@ angular.module('routingDemoApp',['ngRoute','controllers','services','filters','d
     	templateUrl: './src/templates/indexPage.html',
 	    controller: 'indexPageCtr'
     })
-    .when('/computers',{
+    .when('/zpdemo',{
     	templateUrl: './src/templates/fenLei.html',
 	    controller: 'fenLeiCtr'
     })

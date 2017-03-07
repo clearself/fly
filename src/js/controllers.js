@@ -9,7 +9,7 @@ angular.module('controllers',[])
 .controller('indexCtr',function($scope){
 	$scope.caidans = [
 			{title:'/',name:'markdown笔记'},
-			{title:'/computers',name:'网页笔记'}
+			{title:'/zpdemo',name:'作品案例'}
 //			{title:'/printers',name:'打印机'},
 //			{title:'/form',name:'表单提交'},
 //			{title:'/blabla',name:'其他'}
