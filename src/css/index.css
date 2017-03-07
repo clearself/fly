@@ -99,6 +99,9 @@ form[name='myForm'] div{
 .title{
 	position: relative;
 	padding:10px 80px 10px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .title a{
 	color:#333;
