@@ -19,17 +19,9 @@ angular.module('controllers',[])
  })
 .controller('indexPageCtr',function($scope){
 	$scope.data = [
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 x64服务器 搭建PHP环境","description":"windows server 2008R2 x64位服务器上搭建PHP环境,1、安装IIS；2、安装V11；3、安装CGI；4、安装php；5、配置php.ini文件。","dateline":"2017-03-02"},
 				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"}
+				
 				
 	]
 	$scope.pageIndex = 1;
