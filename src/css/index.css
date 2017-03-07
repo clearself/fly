@@ -77,15 +77,15 @@ form[name='myForm'] div{
 }
 
 /****markdown模块*****/
-.markdown{
+.markdown,.netPage{
 	width:750px;
 	margin: 10px auto 0;
 }
-.markdown ul{
+.markdown ul,.netPage ul{
 	overflow: hidden;
 	min-height: 530px;
 }
-.markdown ul li{
+.markdown ul li,.netPage ul li{
 	width:340px;
 	margin: 10px 15px;
 	float:left;
@@ -106,6 +106,7 @@ form[name='myForm'] div{
 }
 .title a:hover{
 	text-decoration: underline;
+	color:#D00355;
 }
 .title span{
 	position: absolute;
