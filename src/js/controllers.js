@@ -18,11 +18,25 @@ angular.module('controllers',[])
    			
  })
 .controller('indexPageCtr',function($scope,indexServices){
+	$scope.data = [
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"},
+				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","dateline":"2017-03-02"}
+				
+	]
 	$scope.pageIndex = 1;
 	$scope.pageSize = 10;
 	$scope.totalPage = 1;
 	$scope.pageShow = false;
-	$scope.data = [];
+	
 	$scope.items = [];
 	$scope.pageTip =$scope.pageIndex+'/'+$scope.totalPage;
 	$scope.render=function(){
@@ -35,14 +49,11 @@ angular.module('controllers',[])
 		}
 		$scope.pageTip = $scope.pageIndex+'/'+$scope.totalPage;
 	}
-	indexServices.getIndexList().then(function(data){
-		$scope.data = data.data;
-		$scope.totalPage = Math.ceil($scope.data.length/$scope.pageSize);
+	$scope.totalPage = Math.ceil($scope.data.length/$scope.pageSize);
 		if($scope.totalPage>1){
 			$scope.pageShow = true;
-		}
-		$scope.render();
-	});
+	}
+	$scope.render();
    $scope.prev=function(){
 		$scope.pageIndex --;
 		if($scope.pageIndex<=0){
