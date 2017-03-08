@@ -21,13 +21,15 @@
         <script src="src/js/filters.js"></script>
     </head>
     <body ng-app='routingDemoApp' ng-controller="indexCtr">
-     	<div class="top">
-     		<span>FLY BLOG</span>
+     	<div class="wrapper">
+     		<div class="top">
+	     		<span>FLY BLOG</span>
+	     	</div>
+	     	<ul class="row list">
+		        	<li class="col-sm-6" ng-repeat="item in caidans"><a href="#{{item.title}}"><i class="push"></i>{{item.name}}<i class="fa-angle-right"></i></a><span class="hover"></span>
+		    		</li>
+		    </ul>
+		    <div ng-view></div>
      	</div>
-     	<ul class="row list">
-	        	<li class="col-sm-6" ng-repeat="item in caidans"><a href="#{{item.title}}"><i class="push"></i>{{item.name}}<i class="fa-angle-right"></i></a><span class="hover"></span>
-	    		</li>
-	    </ul>
-	    <div ng-view></div>
 	</body>
 </html>
