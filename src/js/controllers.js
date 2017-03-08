@@ -19,8 +19,24 @@ angular.module('controllers',[])
  })
 .controller('indexPageCtr',function($scope){
 	$scope.data = [
-				{"title":"windows server 2008R2 x64服务器 搭建PHP环境","description":"windows server 2008R2 x64位服务器上搭建PHP环境,1、安装IIS；2、安装V11；3、安装CGI；4、安装php；5、配置php.ini文件。","link":"https://clearself.github.io/fly/markdown/setPHP.html","dateline":"2017-03-07"},
-				{"title":"windows server 2008R2 搭建ftp环境","description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。","link":"https://clearself.github.io/fly/markdown/setFtp.html","dateline":"2017-03-07"}
+				{
+					"title":"Git命令、Github Pages搭建博客 基本操作",
+					"description":"相信每个人都想拥有一个自己的个人博客或者网站,那么Github Pages绝对是一个不错的选择,使用Git来管理自己的代码版本,如果你是一个程序猿,竟然还不知道到Git、Github,那么你肯不是一个标准的程序猿,这个用的东西一定要先收藏起来。撸起你的袖子,Go!Go!Go! ",
+					"link":"https://clearself.github.io/fly/markdown/git.html",
+					"dateline":"2017-03-08"
+				},
+				{
+					"title":"windows server 2008R2 x64服务器 搭建PHP环境",
+					"description":"windows server 2008R2 x64位服务器上搭建PHP环境,1、安装IIS;2、安装V11;3、安装CGI;4、安装php;5、配置php.ini文件.",
+					"link":"https://clearself.github.io/fly/markdown/setPHP.html",
+					"dateline":"2017-03-07"
+				},
+				{
+					"title":"windows server 2008R2 搭建ftp环境",
+					"description":"初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。",
+					"link":"https://clearself.github.io/fly/markdown/setFtp.html",
+					"dateline":"2017-03-07"
+				}
 				
 				
 	]
