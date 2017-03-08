@@ -1,4 +1,4 @@
-##Git、Github 基本操作
+##Git、Github Pages 搭建博客基本操作
 
 #####在任意目录中创建新的 本地化Git仓库，在目录中执行 git init，就可以创建一个 Git 仓库了
 >$ mkdir runoob     &nbsp;&nbsp;&nbsp;//新建文件夹 runoob 
