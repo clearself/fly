@@ -1,29 +1,47 @@
-@import url("common.css");
+
+ul,li{
+	list-style: none;
+	padding:0!important;
+	margin:0!important;
+}
 .top{
 	height:90px;
-	background-color: #cccccc;
-	line-height: 90px;
+	position: relative;
+	background:url(../img/toolBar.png) 0 0 no-repeat;
+}
+.top span{
+	width:156px;
+	height:30px;
+	line-height: 30px;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right:0;
+	margin:auto;
 	text-align: center;
 	font-size: 30px;
 	color:yellowgreen;
-	background:url(../img/toolBar.png) 0 0 no-repeat;
 }
-.list{
-	width:190px;
-	padding-left: 10px;
+.con{
 	position: absolute;
 	top:90px;
-	bottom: 0;
-	/*background: url("../img/menu_pattern_1.png");*/
+}
+
+.list{
+	padding: 0;
+	margin: 0;
 	background-color:rgba(0,0,0,.8);
 }
 .list li {
 	position: relative;
 	text-align: center;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	line-height: 40px;
 	cursor: pointer;
-}
+	border-top:1px solid #555;
+	
+	}
 .list li a {
   text-decoration: none;
   color: #999;
@@ -63,12 +81,7 @@
   margin-right: 10px;
 }
 	
-.view{
-		position: absolute;
-		top:90px;
-		left:200px;
-		right:0;
-}
+
 .error{
 	color:red;
 }
@@ -76,24 +89,26 @@ form[name='myForm'] div{
 	margin: 10px 0;
 }
 
+
 /****markdown模块*****/
 .markdown,.netPage{
-	width:780px;
-	margin: 10px auto 0;
+	padding:0 2%;
+	
+	
 }
 .markdown ul,.netPage ul{
 	overflow: hidden;
 	min-height: 530px;
+	box-sizing: border-box;
 }
-.markdown ul li,.netPage ul li{
-	width:340px;
-	margin: 10px 15px;
-	float:left;
-	padding-bottom: 10px;
+
+.markdown ul .li_inner,.netPage ul .li_inner{
+	padding:0 10px 10px 10px !important;
+	margin:10px 10px!important;
 	overflow: hidden;
 	background-color: #f1f1f1;
-	padding:10px;
 	box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+	box-sizing: border-box;
 }
 
 
@@ -104,6 +119,7 @@ form[name='myForm'] div{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	box-sizing: border-box;
 }
 .title a{
 	color:#333;
@@ -121,10 +137,11 @@ form[name='myForm'] div{
 }
 
 .description{
-	padding-right:50px;
+	max-width:100%;
 	height:40px;
 	line-height: 20px;
 	overflow: hidden;
+	word-break: break-all;
 }
 .pages{
 	width:100%;
@@ -140,4 +157,9 @@ form[name='myForm'] div{
 }
 .pages a:hover{
 	color:#D00355;
+}
+
+.indexList{
+	padding:0;
+	box-sizing: border-box;
 }

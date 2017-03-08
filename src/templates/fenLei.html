@@ -1,11 +1,13 @@
 <div class="netPage">
-	<ul class="indexList">
-		<li class="list_con" ng-repeat="item in items">
-			<div class="title">
-				<a href="{{item.link}}" target="_blank">{{item.title}}</a>
-				<span class="time">{{item.dateline}}</span>
+	<ul class="row indexList">
+		<li class="col-sm-4 list_con" ng-repeat="item in items">
+			<div class="li_inner">
+				<div class="title">
+					<a href="{{item.link}}" target="_blank">{{item.title}}</a>
+					<span class="time">{{item.dateline}}</span>
+				</div>
+				<div class="description">{{item.description}}</div>
 			</div>
-			<div class="description">{{item.description}}</div>
 		</li>
 	</ul>
 	<div class="pages" ng-if="pageShow">

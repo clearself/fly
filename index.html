@@ -3,7 +3,13 @@
     <head>
     	<meta charset="utf-8">
         <title>FLY Personal Blog</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	  	<link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	    <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="src/css/index.css" />
+        
         <!--引入angular框架-->
    		<script src="src/formwork/angular.min.js"></script>
         <script src="src/formwork/angular-route.js"></script>
@@ -15,11 +21,13 @@
         <script src="src/js/filters.js"></script>
     </head>
     <body ng-app='routingDemoApp' ng-controller="indexCtr">
-     	<h2 class="top">FLY BLOG</h2>
-        <ul class="list">
-        	<li ng-repeat="item in caidans"><a href="#{{item.title}}"><i class="push"></i>{{item.name}}<i class="fa-angle-right"></i></a><span class="hover"></span>
-    		</li>
-        </ul>
-        <div class="view" ng-view></div>
+     	<div class="top">
+     		<span>FLY BLOG</span>
+     	</div>
+     	<ul class="row list">
+	        	<li class="col-sm-6" ng-repeat="item in caidans"><a href="#{{item.title}}"><i class="push"></i>{{item.name}}<i class="fa-angle-right"></i></a><span class="hover"></span>
+	    		</li>
+	    </ul>
+	    <div ng-view></div>
 	</body>
 </html>
