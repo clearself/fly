@@ -2,11 +2,13 @@
 	<ul class="row indexList">
 		<li class="col-sm-4 " ng-repeat="item in items">
 			<div class="li_inner">
-				<div class="title">
-					<a href="{{item.link}}" target="_blank">{{item.title}}</a>
-					<span class="time">{{item.dateline}}</span>
-				</div>
-				<div class="description">{{item.description}}</div>
+				<a href="{{item.link}}" target="_blank">
+					<div class="title">
+						<strong>{{item.title}}</strong>
+						<span class="time">{{item.dateline}}</span>
+					</div>
+					<div class="description">{{item.description}}</div>
+				</a>
 			</div>
 		</li>
 	</ul>
