@@ -9,7 +9,7 @@ ul,li{
 .top{
 	height:90px;
 	position: relative;
-	background:url(../img/toolBar.png) 0 0 no-repeat;
+	background:url(../img/nav.png) 0 0 repeat-x;
 }
 .top span{
 	width:156px;
