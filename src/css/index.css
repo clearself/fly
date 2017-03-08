@@ -37,7 +37,7 @@ ul,li{
 	position: relative;
 	text-align: center;
 	/*margin-top: 10px;*/
-	line-height: 40px;
+	line-height: 56px;
 	cursor: pointer;
 	border-top:1px solid #555;
 	
@@ -92,7 +92,7 @@ form[name='myForm'] div{
 
 /****markdown模块*****/
 .markdown,.netPage{
-	padding:0 2%;
+	padding:10px  2% 0;
 	
 	
 }
