@@ -15,6 +15,29 @@ $(function(){
 			var n = t.currentStyle ? t.currentStyle[e] : document.defaultView.getComputedStyle(t, !1)[e];
 			return "opacity" == e ? Math.round(100 * parseFloat(n)) : parseInt(n)
 		}
+			var l=0;
+			var imgs;
+			var sum=0;
+			function chk(){
+				$('#load_text').text(parseInt(((sum-l)*100/sum))+"%");
+				console.log(l,sum);
+				l--;
+				if (l==0){
+					//加载完成
+					$('#load_text').text(((sum-l)*100/sum)+"%");
+					$('.load_box').css('opacity',0);
+					setTimeout(function(){
+						$('.load_box').css('display','none');
+					},1000)
+				}
+			}
+			
+			imgs=$("img");
+			sum=l=imgs.length;
+			for (var i=0;i<l;i++){
+				imgs[i].onload=chk;
+				imgs[i].onerror=chk;//无论图片是否加载成功，都执行指定方法
+			}
         $('.wp-inner').fullpage({
             change: function (e) {
                 // 移除动画属性
