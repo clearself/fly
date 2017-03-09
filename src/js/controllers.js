@@ -20,6 +20,12 @@ angular.module('controllers',[])
 .controller('indexPageCtr',function($scope){
 	$scope.data = [
 				{
+					"title":"Gulp 安装与使用",
+					"description":"gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成；使用她，我们不仅可以很愉快的编写代码，而且大大提高我们的工作效率",
+					"link":"https://clearself.github.io/fly/markdown/gulp.html",
+					"dateline":"2017-03-09"
+				},
+				{
 					"title":"Git命令、Github Pages搭建博客 基本操作",
 					"description":"相信每个人都想拥有一个自己的个人博客或者网站,那么Github Pages绝对是一个不错的选择,使用Git来管理自己的代码版本,如果你是一个程序猿,竟然还不知道到Git、Github,那么你肯不是一个标准的程序猿,这么有用的东西一定要先收藏起来。撸起你的袖子,Go!Go!Go! ",
 					"link":"https://clearself.github.io/fly/markdown/git.html",
