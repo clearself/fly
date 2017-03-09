@@ -29,11 +29,12 @@ $(function(){
         document.getElementById("load_text").innerHTML = ( "已加载 " + percent + " %");
     });
     loader.addCompletionListener(function () {
-        $("#loading_bg").remove();
-       $('.load_box').css('opacity',0);
-		setTimeout(function(){
+    	setTimeout(function(){
+			$('.load_box').css('opacity',0);
+		},500)
+        setTimeout(function(){
 			$('.load_box').css('display','none');
-		},1000)
+		},1300)
 		 $('.wp-inner').fullpage({
             change: function (e) {
                 // 移除动画属性
