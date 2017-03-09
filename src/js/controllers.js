@@ -86,8 +86,8 @@ angular.module('controllers',[])
  })
 .controller('fenLeiCtr',function($scope){
    			$scope.data = [
-				{"title":"微信场景案例","description":"微信场景案例使用到fullPage.js框架整屏滑动,css3动画","link":" https://clearself.github.io/h5since/","dateline":"2017-03-07"}
-				
+				{"title":"微信场景作品","description":"微信场景案例使用到zepto.fullPage.js框架整屏滑动,框架够轻量,css3动画可配置并且可自定义,点击进入>>","link":"https://clearself.github.io/fly/works/wxsince/index.html","dateline":"2017-03-09"},
+				{"title":"微场景元宵特辑","description":"微场景特辑案例使用到swiper框架整屏滑动,框架较轻轻量,适配方面采用所有动画元素位置,宽高重新计算,赋值,可是配任何手机及移动产品,点击进入>>","link":"https://clearself.github.io/fly/works/wxyx/index.html","dateline":"2017-03-07"}
 				
 	]
 	$scope.pageIndex = 1;
