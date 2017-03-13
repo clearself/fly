@@ -20,6 +20,12 @@ angular.module('controllers',[])
 .controller('indexPageCtr',function($scope){
 	$scope.data = [
 				{
+					"title":"React脚手架 yo安装 ",
+					"description":"react开发有了脚手架就如虎添翼,而yo绝对让你值得拥有,赶快让你的代码飞起来吧,如何让配置请戳这里>>",
+					"link":"https://clearself.github.io/fly/markdown/react_yo.html",
+					"dateline":"2017-03-13"
+				},
+				{
 					"title":"Gulp 安装与使用",
 					"description":"gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成；使用她，我们不仅可以很愉快的编写代码，而且大大提高我们的工作效率",
 					"link":"https://clearself.github.io/fly/markdown/gulp.html",
